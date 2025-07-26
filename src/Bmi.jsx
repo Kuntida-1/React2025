@@ -1,8 +1,10 @@
 import { useState, useRef } from "react";
+import './Bmi.css';
+
 function BmiText({bmi}){
-    if (bmi<18.5){ return (<><img src="skinny.jpg" /><h1>Underweight</h1></>);}
-    if (bmi>30){ return (<><img src="Over.jpg" /><h1>Overweight</h1></>);}
-    return (<><img src="normal.jfif" /><h1>Normal</h1></>);
+    if (bmi<18.5){ return (<><img src="skinny.jpg" height={400}/><h1>Underweight</h1> </>);}
+    if (bmi>30){ return (<><img src="Over.jpg"height={400} /><h1>Overweight</h1></>);}
+    return (<><img src="normal.jfif"height={400} /><h1>Normal</h1></>);
 }
 export default function Bmi(){
     const w_inputRef=useRef(null);
@@ -11,7 +13,7 @@ export default function Bmi(){
 
     function calbmi(){
      let w=parseFloat(w_inputRef.current.value);
-     let h=parseFloat(w_inputRef.current.value)/100;
+     let h=parseFloat(h_inputRef.current.value)/100;
      setBmi(w/(h*h));
 }
     return (<> <h1>Bmi Calulator</h1>

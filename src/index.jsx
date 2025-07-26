@@ -6,6 +6,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Counter from './Counter';
 import Bmi from './Bmi';
+import './Bmi.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
