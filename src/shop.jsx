@@ -36,7 +36,8 @@ export default function Shop(){
     return (<>
     <header>
         <h1>Book Lover Store</h1>
-        <p>all the book you can think of is here!!</p>
+        <p>หนังสือทั้งหมดอยู่นี่แล้ว!!</p>
+
         <nav>
         <a href="#">Home</a>
         <a href="#">Shop</a>
