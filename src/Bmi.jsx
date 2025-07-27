@@ -2,9 +2,9 @@ import { useState, useRef } from "react";
 import './Bmi.css';
 
 function BmiText({bmi}){
-    if (bmi<18.5){ return (<><img src="skinny.jpg" height={400}/><h1>Underweight</h1> </>);}
-    if (bmi>30){ return (<><img src="Over.jpg"height={400} /><h1>Overweight</h1></>);}
-    return (<><img src="normal.jfif"height={400} /><h1>Normal</h1></>);
+    if (bmi<18.5){ return (<><img src="skinny.jpg" height={600}/><h1>Underweight</h1> </>);}
+    if (bmi>30){ return (<><img src="Over.jpg"height={600} /><h1>Overweight</h1></>);}
+    return (<><img src="normal.jfif"height={600} /><h1>Normal</h1></>);
 }
 export default function Bmi(){
     const w_inputRef=useRef(null);

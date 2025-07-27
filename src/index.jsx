@@ -5,15 +5,18 @@ import './index.css';
 //import Hello from './Hello';
 import reportWebVitals from './reportWebVitals';
 import Counter from './Counter';
-import Bmi from './Bmi';
-import './Bmi.css';
+//import Bmi from './Bmi';
+// import './Bmi.css';
+import Shop from './shop';
+import './Shop.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter/>
-    <Bmi/>
+    {/*<Counter/>
+    <Bmi/>*/}
+    <Shop/>
     {/*<Hello name ="KK" age={12}/ >
     <Hello name ="CC" / >
     <Hello / >*/}
